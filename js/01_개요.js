@@ -7,10 +7,10 @@ function btnClick2() {
 }
 
 function changeColor1() {
-document.getElementById("box").style.backgroundColor = "red";
+document.getElementById("box").style.backgroundColor = "yellow";
 }
 
 
 function changeColor2() {
-    document.getElementById("box").style.backgroundColor = "yellow";
+    document.getElementById("box").style.backgroundColor = "red";
     }
