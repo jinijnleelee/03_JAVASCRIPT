@@ -7,7 +7,7 @@ const result = document.getElementById("result");
 function plus() {
     //함수가 호출 되었을때 내부 코드가 해석되면서 수행.
     const n1 = Number(num1.value);
-    const n2 = Number(num1,Value);
+    const n2 = Number(num1.Value);
 
     result.innerText = n1 + n2;
 
