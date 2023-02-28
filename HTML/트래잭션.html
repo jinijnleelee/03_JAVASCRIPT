@@ -7,122 +7,76 @@
     <title>Document</title>
     <style>
 
-#tb3{
-    border: 1px solid black;
-    width: 100px;
-    height: 100px;
-}
-th{
-    border: 1px solid black;
-}
-td{
-    border: 1px solid black;
-}
+            .tb3 {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
 
-/* #div1{
-    border: 1px solid black;
-    width: 100px;
-    height: 100px;
-}
-#div2{
-    border: 1px solid black;
-    width: 100px;
-   
-}
-.no_dot{
-    list-style: none;
-    display: flex;
-   
-}
-input{
-    border: none;
-    width: 90px;
-}
+            .tb3 th, td{
+                border: 1px solid black;
+            }
+            .tr1 > td{
+                width: 100px;
+                height: 100px;
 
-input:focus {
-outline: none; 
-}
-ul{
-  
-} */
+
+            }
+            input{
+                width: 100px;
+            }
+
+          
+
+        </style>
 
 
 
-    </style>
+
 </head>
 <body>
-
-<!-- <ul class="no_dot">
-    <li>
-        <div id="div1"></div>
-    </li>
-    <li>
-        <div id="div2">
-            <input type="text">
-        </div>
-        
-    </li>
-    <li>
-        <div id="div1"></div>
-    </li>
-    <li>
-        <div id="div2">
-            <input type="text">
-        </div>
-        
-    </li>
-    <li>
-        <div id="div1"></div>
-    </li>
-    <li>
-        <div id="div2">
-            <input type="text">
-        </div>
-        
-    </li>
-</ul> -->
-
 
 
 
 
 <table class="tb3">
-    <thead>
-        <tr>
-            <th>이름</th>
-            <th>나이</th>
-            <th>주소</th>
-        </tr>
-    </thead>
-
-    <tbody>
-        <tr>
-            <td>홍길동</td>
-            <td>20</td>
-            <td>서울시 구로구</td>
-        </tr>
-        <tr>
-            <td>김은진</td>
-            <td>100</td>
-            <td>인천</td>
-        </tr>
-        <tr>
-            <td>조미현</td>
-            <td>50</td>
-            <td>서울시 성동구</td>
-        </tr>
-    </tbody>
-
-    <tfoot>
-        <tr>
-            <th colspan="2">총인원</th>
-            <th>3명</th>
-        </tr>
-    </tfoot>
+    
        
+        <tr class="tr1">
+            <td ><span></span></td>
+            <td ><span></span></td>
+            <td ><span></span></td>
+           
+            <td ><span></span></td>
+            <td ><span></span></td>
+           
+        </tr>
+         
+             <tr>
+            <td><input type="text" id="input1"></td>
+           
+           
+            <td><input type="text"></td>
+
+          
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+      
+   
+
+
+
+
+
+</table>
 
     <p>현재 transition-duration : <span >0초</span></p>
     <p>현재 transition-duration 변경: <input type="text"></p>
+    <button class="reset">초기화</button>
+
+  
 
 </body>
+<script src="/js/트래잭션.js"></script>
 </html>
