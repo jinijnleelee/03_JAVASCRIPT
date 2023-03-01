@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 14px;
+            width: auto;
+            padding: 3px;
+            
+           
+        }
+    </style>
+</head>
+<body>
+    <form action="main.html" method="get">
+    <fieldset>
+        
+        <legend>회원 가입 양식</legend>
+
+
+
+        <table>
+        <tr>
+            <td>아이디</td>
+            <td><input type="text" name="id" id="id"></td>
+            <td><button id="btnId">중복확인</button></td>
+
+        </tr>
+
+        <tr>
+            <td>비밀번호</td>
+            <td><input type="password" name="pw" id="pw"></td>
+            <td ><span id="spanPw"></span></td>
+        </tr>
+        <tr>
+            <td>비밀번호확인</td>
+            <td><input  type="password" name="pw2" id="pw2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>이름</td>
+            <td><input type="text" name="name" id="inputName"></td>
+            <td><span id="spanName"></span></td>
+        </tr>
+        <tr>
+            <td>성별</td>
+            <td>남<input type="radio" name="남자">여<input type="radio" name="여자"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>전화번호</td>
+            <td><input type="text" name="phone"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>이메일</td>
+            <td><input type="text" name="email"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="reset">초기화</button><button type="submit" id="signUp">회원가입</button></td>
+            <td></td>
+        </tr>
+    </table>
+    </fieldset>
+</form>
+    <script src="/js/회원가입과제.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+</body>
+</html>
