@@ -5,7 +5,7 @@ document.getElementById("btn1").addEventListener("click", function() {
     //요소.parentNode : 요소의 부모노드를 탐색해서 반환
 
     //자식
-    //요소.childeNode : 요소의 자식노드를 모두 반환 (NodeList 형태)
+    //요소.childeNodes : 요소의 자식노드를 모두 반환 (NodeList 형태)
     //요소.firstChild : 첫 번째 자식 노드를 탐색해서 반환
     //요소.lastChild : 마지막 자식 노드를 탐색해서 반환
     //요소.childeNode[인덱스] : 인덱스 번째 자식 노드를 탐색해서 반환
@@ -17,8 +17,8 @@ document.getElementById("btn1").addEventListener("click", function() {
     //#test 의 자식 노드를 모두 얻어와서 확인
     const testNodeList = document.getElementById("test").childNodes;
     console.log(testNodeList);
-
-
+    
+    
     //노드 탐색
     const lil = document.getElementById("lil");
     console.log(lil.parentNode); //부모 노드 형식 (ul#test)
@@ -45,7 +45,7 @@ document.getElementById("btn1").addEventListener("click", function() {
     //#test의 자식노드중 5번째 인덱스 의 다음 형제 노드 
     test.childNodes[5].nextSibling;
     //#test의 자식노드중 5번째 인덱스의 이전 형제 노드의 이전 형제 노드 
-    test.childNodes[5].previousSibling
+    test.childNodes[5].previousSibling.previousSibling;
 
 
 
@@ -73,6 +73,7 @@ btn2.addEventListener("click", function(){
     console.log(lil.parentElement);
 
 
+
     //#lil의 부모요소의 부모요소 탐색 
     console.log(lil.parentElement.parentElement);
     //#test의 모든 자식요소 탐색
@@ -86,9 +87,11 @@ btn2.addEventListener("click", function(){
       //해당 요소의 다음형제의 다음형제 요소의 배경색을 red로 변경 
     list[2].previousElementSibling.addEventListener("click", function () {
     alert(this.innerText);
+        //this == 이벤트가 발생한 요소.
+        // == #test의 자식요소 중 2번째 인덱스의 이전 형제 요소
 
     this.nextElememtsibling.nextElememtsibling.style.backgrounColor = "red";
-    
+     //해당 요소의 다음형제의 다음형제 요소의 배경색을 red로 변경 
 
 
     })
@@ -125,7 +128,7 @@ btn4.addEventListener("click", function() {
 
     if(const4 <= 10){
         //doucument.createElement("태그명");
-        //-> 해당 태그 욧를 생성하여 반환
+        //-> 해당 태그 요소를 생성하여 반환
         // -> 요소가 생성될 뿐이지 화면 추가되는것이 아니다
 
         const div = document.createElement("div");

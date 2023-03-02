@@ -17,6 +17,14 @@
         border: 1px solid black;
     }
 
+    .area > div {
+       height: 10%;
+       box-sizing: border-box;
+       border: 2px solid rebeccapurple;
+       background-color: yellow;
+    }
+    
+
 </style>
 <body>
     <h2>제목</h2>
@@ -24,10 +32,11 @@
     <pre>
         HTML(웹문서,웹페이지) 문서를 객체 기반으로 표현한것
         -> HTML문서에 작성된 내용을 트리구조(계층형으로 표현)으로 나타냈을때
-        각각의 태그,TEST,COMENT 등등 Node라고 한다
+        각각의 태그,TEXT,COMENT 등등 Node라고 한다
 
-        doucment : {
-            DOCTYPE : html,
+        doucment : { 
+            HTML{ 
+            HEAD : {
                 TITLE : { TEXT : "문서제목"},
                 STYLE : {...},
                 META : {...},
@@ -40,6 +49,8 @@
         }
         }
     </pre>
+    <hr>
+    <h1>Node 확인하기</h1>
     <ul id="test">
         <li id="lil">1번</li>
         <li class="cls">2번</li>
@@ -55,7 +66,7 @@
 
 
     <h2>NOde와 Element의 차이</h2>
-    <pre>NOde : 태그(요소 노드), 속성, 주석, 내용(텍스트 노트) 등 모두 표현.
+    <pre>Node : 태그(요소 노드), 속성, 주석, 내용(텍스트 노트) 등 모두 표현.
 
         Element : Node의 하위 개념요소 노드만을 표현
 
@@ -106,6 +117,6 @@
 
 
 
-    <script src="/js/12_DOM.js"></script>
+    <script src="/js/13_DOM.js"></script>
 </body>
 </html>

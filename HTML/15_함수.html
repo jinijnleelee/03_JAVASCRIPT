@@ -26,6 +26,8 @@
 
 
         }
+
+
         함수명 ([매개변수]); // 함수 호출
     </code>
 </pre>
@@ -66,7 +68,7 @@
 함수가 정의되자 마자 바로 실행되는 함수
 **즉시 실행 함수 사용 이름**
 1) 함수 선언 및 호출을 위한 탐색 과정이 생략되기 때문에
-속도력 우위를 가지고 있다
+속도적 우위를 가지고 있다
 
 2) 변수명 중복을 방지할 수 있다
     -> 즉시 실행 함수 내부에 작성되면
@@ -83,23 +85,23 @@
     익명함수 : function() {}
     화살표함수 : () => {}
 
-    익명함수 : function(num) {return num # 2;}
+    익명함수 : function(num) {return num * 2;}
     화살표함수 : (num) => {return num * 2;}
 
     작성법 2. 매개변수가 "하나"인 경우 () 생략가능
-    익명 함수 :  function(w) {w.target.style.backgroundColor = 'yellow';}
+    익명 함수 :  function(e) {e.target.style.backgroundColor = 'yellow';}
     화살표함수 : e => {e.target.style.backgroundColor = 'yellow';}
 
     작성법 3. 매개변수가 없을 경우 "무조건" () 작성
 
     작성법 4. 함수 정의 부분이 return [식 또는 값] 으로만 작성되어 있는 경우에
-    {} return 생략가능
+    {} ,return 생략가능
 
         익명함수 : function(num) {return num # 2;}
         화살표함수 : num => num * 2;
 
-        작성법 5, 함수정의 부분이 return 구문만 있으니
-        trturn되는 값이 객체(object)인 경우 {} ,returen 생략 불가능
+        작성법 5, 함수정의 부분이 return 구문만 있으나
+        return되는 값이 객체(object)인 경우 {} ,returen 생략 불가능
 
         익명 함수 : funtion () {return {"name" : "홍길동 ", "age" : 20}}
         화살표 함수 : () => return {"name" : "홍길동", "age" : 20} }

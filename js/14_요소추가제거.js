@@ -24,7 +24,7 @@ document.getElementById("add").addEventListener("click", function() {
 
 
      //span요소 생성
-     const span = document.createElement("span");
+     const span = document.createElement("span");//동적으로 요소를 생성
 
      //span에 remove class 추가
      span.classList.add("remove");
@@ -66,7 +66,7 @@ document.getElementById("add").addEventListener("click", function() {
 
         }
         
-        alert("합계" + sum)
+        alert("합계" + sum);
      })
 
 
