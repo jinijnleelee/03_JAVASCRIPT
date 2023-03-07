@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <button id="btn"> 클릭전</button>
+   
+
+
+    
+
+</body>
+<script>
+
+var button = document.getElementById("btn");
+
+
+button.addEventListener("click",function() {
+
+    button.value = "클릭후";
+    button.style.backgroundColor = 'red';
+    
+});
+//---------------------------
+//  button.innerText = "클릭후"; innerText로 바꿔야됨 
+//   button.style.color = 'red'; color로 바꿔줘야됨 
+
+
+
+// var button = document.getElementById("btn");
+
+
+// button.addEventListener("click",function() {
+
+//     button.innerText = "클릭후";
+//     button.style.color = 'red';
+    
+// });
+
+    
+    
+    
+    //1. 
+    var button = document.getElementsByClassName("btn");
+    button.addEventListener("mouseover",function() {
+        console.log("버튼이 클릭됨 ";)
+    });
+    //-----------------
+    //  document.getElementById("btn"); 으로 바꿔야됨
+    //  console.log("버튼이 클릭됨 "); 이렇게 써야됨 
+
+
+    // var button = document.getElementById("btn");
+    // button.addEventListener("click",function() {
+    //     console.log("버튼이 클릭됨 ");
+    // });
+
+
+
+</script>
+</html>
